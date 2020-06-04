@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello(String name) {
+        System.out.println("执行了sayHello方法");
         return "Hello " + name;
     }
 }
